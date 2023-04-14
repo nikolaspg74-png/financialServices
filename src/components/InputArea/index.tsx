@@ -44,6 +44,13 @@ export const InputArea = ({ onAdd }: Props) => {
       });
       clearFields();
     }
+    console.log({
+      date: newDateAdjusted(dateField),
+      category: categoryField,
+      title: titleField,
+      value: valueField
+    });
+    
   }
 
   const clearFields = () => {

@@ -19,7 +19,8 @@ export const TableItem = ({ item }: Props) => {
             <C.TableColumn>{item.title}</C.TableColumn>
             <C.TableColumn>
                 <C.Value color={categories[item.category].expense ? 'red' : 'green'}>
-                     {item.value.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}
+                     {/* {item.value.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')} */}
+                     {item.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}
                 </C.Value>
             </C.TableColumn>
         </C.TableLine>
