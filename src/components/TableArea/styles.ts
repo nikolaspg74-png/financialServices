@@ -1,3 +1,4 @@
+// src/components/TableArea/styles.ts
 import styled from 'styled-components';
 
 export const Table = styled.table`
