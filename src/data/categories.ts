@@ -1,10 +1,29 @@
-import { Category } from '../types/Category';
-
-export const categories: Category = {
-    food: { title: 'Alimentação 🍝', color: '#6495ED', expense: true },
-    rent: { title: 'Aluguel 🏠', color: '#FF7F50', expense: true },
-    car: { title: 'Carro 🚗', color: '#DC143C', expense: true },
-    card: { title: 'Cartão 💳', color: '#9932CC', expense: true },
-    other: { title: 'Outros 💸', color: '#FFD700', expense: true },
-    salary: { title: 'Salário 💵', color: '#6B8E23', expense: false }
-}
+// src/data/categories.ts
+export let categories: any = {
+    // Adicione as categorias que estão vindo da API
+    Salário: {
+        title: 'Salário',
+        color: 'green',
+        expense: false,
+    },
+    Aluguel: {
+        title: 'Aluguel',
+        color: 'brown',
+        expense: true,
+    },
+    Carro: {
+        title: 'Carro',
+        color: 'orange',
+        expense: true,
+    },
+    Cartão: {
+        title: 'Cartão',
+        color: 'red',
+        expense: true,
+    },
+        Outros: {
+        title: 'Outros',
+        color: 'violet',
+        expense: true,
+    }
+};
